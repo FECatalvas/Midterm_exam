@@ -9,16 +9,57 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
+<style>
+    body {
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    h1 {
+        font-size: 50px;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    .p {
+        font-size: 40px;
+    }
+
+    button {
+        background-color: green;
+    }
+    #body{
+        margin-top: 250px;
+    }
+    #subBody{
+        border: 1px solid white;
+        padding: 20px;
+        margin-left: 400px;
+        margin-right: 400px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 3px 4px #888888;
+    }
+</style>
 
 <body>
-    <h1>Iot Switch Fan</h1>
-    <p>The fan is <span id="status">off</span></p>
-    <button id="btnOff">off</button>
-    <button id="btnOne">1</button>
-    <button id="btnTwo">2</button>
-    <button id="btnThree">3</button>
+    <div id="body">
+        <h1>Iot Switch Fan</h1>
+        <br>
+        <div id="subBody">
+            <p class="p">The fan is switched <span id="status">off</span></p>
+            <button type="button" class="btn btn-secondary" id="btnOff">Off</button>
+            <button type="button" class="btn btn-primary" id="btnOne">1</button>
+            <button type="button" class="btn btn-warning" id="btnTwo">2</button>
+            <button type="button" class="btn btn-danger" id="btnThree">3</button>
+        </div>
+    </div>
 </body>
 <script src="scripts/controller.js"></script>
 <script src="scripts/browserMqtt.js"></script>
+
 </html>
