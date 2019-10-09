@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IoT</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>Iot Switch Fan</h1>
+    <p>The fan is <span id="status">off</span></p>
+    <button id="btnOne">off</button>
+    <button id="btnTwo">1</button>
+    <button id="btnThree">2</button>
+    <button id="btnFour">3</button>
+</body>
+<script src="scripts/controller.js"></script>
+<script src="scripts/browserMqtt.js"></script>
+</html>

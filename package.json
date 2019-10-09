@@ -1,0 +1,22 @@
+{
+  "name": "fecatalvas.github.io",
+  "version": "1.0.0",
+  "description": "MidTerm",
+  "main": "controller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FECatalvas/FECatalvas.github.io.git"
+  },
+  "keywords": [
+    "mqtt"
+  ],
+  "author": "ca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FECatalvas/FECatalvas.github.io/issues"
+  },
+  "homepage": "https://github.com/FECatalvas/FECatalvas.github.io#readme"
+}
